@@ -7,7 +7,7 @@ spec:
   description: Rox demo pipeline
   params:
     - default: >-
-        ${IMAG}
+        ${IMAGE}
       description: |
         Full name of image to scan (example -- gcr.io/rox/sample:5.0-rc1)
       name: image
