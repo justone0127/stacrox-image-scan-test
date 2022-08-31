@@ -64,7 +64,7 @@ spec:
           --output ./roxctl  > /dev/null; echo "Getting roxctl"
         chmod +x ./roxctl > /dev/null
         ./roxctl image scan \
-          $( [ "$(params.insecure-skip-tls-verify)" = "true" ] && \
+          $( [ "$(params.insecure-skip-tls-verify)" = "false" ] && \
           echo -n "--insecure-skip-tls-verify") \
           -e "$ROX_CENTRAL_ENDPOINT" --image "$(params.image)" \
           --format "$(params.output_format)"
